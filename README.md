@@ -77,3 +77,19 @@ $ git fetch upstream
 $ git merge upstream/master
 $ git push origin master
 ```
+
+## Aliases
+
+The following are some very useful [aliases](https://git.wiki.kernel.org/index.php/Aliases) to use with git.
+
+```bash
+# Prints out a very helpful log of commits. Much better than git log.
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Alias 'c' to 'commit -m' like => git c "Awesome update!"
+$ git config --global alias.c "commit -m"
+
+# Do a hard reset
+$ git config --global alias.undo "reset --hard HEAD^"
+```
+
